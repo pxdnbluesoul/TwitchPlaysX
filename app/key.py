@@ -5,18 +5,67 @@ import win32con
 import win32ui
 import time,sys
 
-keyDelay = 0.1
+keyDelay = 10.0 # Seconds
 keymap = {
-    "Up": win32con.VK_UP,
-    "Left": win32con.VK_LEFT,
-    "Down": win32con.VK_DOWN,
-    "Right": win32con.VK_RIGHT,
-    "b": ord("B"),
-    "a": ord("A"),
-    "y": ord("Y"), #for NDS
-    "x": ord("X"), #for NDS
-    "s": ord("S"), #start
-    "e": ord("E") #select
+    "up": win32con.VK_UP,
+    "left": win32con.VK_LEFT,
+    "down": win32con.VK_DOWN,
+    "right": win32con.VK_RIGHT,
+    "bksp": win32con.VK_BACK,
+	"delete": win32con.VK_DELETE,
+	"blackbox": ord("█")
+    "a": ord("a"),
+    "b": ord("b"),
+    "c": ord("c"),
+    "d": ord("d"),
+    "e": ord("e"),
+    "f": ord("f"),
+    "g": ord("g"),
+    "h": ord("h"),
+    "i": ord("i"),
+    "j": ord("j"),
+    "k": ord("k"),
+    "l": ord("l"),
+    "m": ord("m"),
+    "n": ord("n"),
+    "o": ord("o"),
+    "p": ord("p"),
+    "q": ord("q"),
+    "r": ord("r"),
+    "s": ord("s"),
+    "t": ord("t"),
+    "u": ord("u"),
+    "v": ord("v"),
+    "w": ord("w"),
+    "x": ord("x"),
+    "y": ord("y"),
+    "z": ord("z"),
+    "A": ord("A"),
+    "B": ord("B"),
+    "C": ord("C"),
+    "D": ord("D"),
+    "E": ord("E"),
+    "F": ord("F"),
+    "G": ord("G"),
+    "H": ord("H"),
+    "I": ord("I"),
+    "J": ord("J"),
+    "K": ord("K"),
+    "L": ord("L"),
+    "M": ord("M"),
+    "N": ord("N"),
+    "O": ord("O"),
+    "P": ord("P"),
+    "Q": ord("Q"),
+    "R": ord("R"),
+    "S": ord("S"),
+    "T": ord("T"),
+    "U": ord("U"),
+    "V": ord("V"),
+    "W": ord("W"),
+    "X": ord("X"),
+    "Y": ord("Y"),
+    "Z": ord("Z"),
 }
 
 def sendKey(button):

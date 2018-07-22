@@ -30,7 +30,7 @@ client.addListener('message' + config.channel, function(from, message) {
             var maxName = config.maxCharName,
             maxCommand = config.maxCharCommand,
             logFrom = from.substring(0, maxName),
-            logMessage = message.substring(0, 6).toLowerCase();
+            logMessage = message.substring(0, 6);
             //format log
             console.log(printf('%-' + maxName + 's % ' + maxCommand + 's',
                 logFrom, logMessage));
@@ -38,7 +38,7 @@ client.addListener('message' + config.channel, function(from, message) {
 
         // Should the message be sent the program?
         if (config.sendKey) {
-            keyHandler.sendKey(message.toLowerCase());
+            keyHandler.sendKey(message);
         }
     }
 });
